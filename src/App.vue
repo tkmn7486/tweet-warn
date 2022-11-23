@@ -9,6 +9,7 @@
         <div class="side-bar col-0 col-md-3 d-none d-md-block">
           <router-link to="/">一覧ページ</router-link>
           <br>
+          <br>
           <router-link to="/about">このサイトについて</router-link>
         </div>
 

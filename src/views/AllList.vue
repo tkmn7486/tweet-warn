@@ -22,34 +22,6 @@
         </table>
       </div>
     </div>
-
-    <!-- 検索結果 -->
-    <div class="search-result">
-      <input type="text" v-model="search_word" @change="sortList()">
-      <div class="list-table">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>ユーザーID</th>
-              <th>報告数</th>
-              <th></th>
-            </tr>
-            <tr v-if="sorted_list == []">
-              <td></td>
-              <td>報告はありません</td>
-              <td></td>
-            </tr>
-            <tr v-for="item in sorted_list" :key="item.id" v-else>
-              <td>@{{item.userID}}</td>
-              <td>{{item.amount}}件</td>
-              <td>
-                <button class="btn btn-sm btn-outline-dark">詳細</button>
-              </td>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
   </div>
 </template>
 

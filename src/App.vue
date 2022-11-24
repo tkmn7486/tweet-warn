@@ -7,49 +7,53 @@
     <div class="container-fluid">
       <div class="row">
         <div class="side-bar col-0 col-md-3 d-none d-md-block">
-          <router-link to="/all_list">
-            <img src="./assets/home.png" class="mini-icon">
-            ホーム
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/all_list">
-            <img src="./assets/all_account.png" class="mini-icon">
-            アカウント一覧
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/report">
-            <img src="./assets/report.png" class="mini-icon">
-            通報フォーム
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/about">
-            <img src="./assets/about.png" class="mini-icon">
-            使い方
-          </router-link>
+          <div class="menu-item">
+            <router-link to="/">
+              <img src="./assets/home.png" class="mini-icon">
+              ホーム
+            </router-link>
+          </div>
+          <div class="menu-item">
+            <router-link to="/all_list">
+              <img src="./assets/all_account.png" class="mini-icon">
+              アカウント一覧
+            </router-link>
+          </div>
+          <div class="menu-item">
+            <router-link to="/report">
+              <img src="./assets/report.png" class="mini-icon">
+              通報フォーム
+            </router-link>
+          </div>
+          <div class="menu-item">
+            <router-link to="/about">
+              <img src="./assets/about.png" class="mini-icon">
+              使い方
+            </router-link>
+          </div>
         </div>
 
         <div class="side-bar col-2 col-md-0 d-block d-md-none">
-          <router-link to="/">
-            <img src="./assets/home.png" class="side-icon">
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/all_list">
-            <img src="./assets/all_account.png" class="side-icon">
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/report">
-            <img src="./assets/report.png" class="side-icon">
-          </router-link>
-          <br>
-          <br>
-          <router-link to="/about">
-            <img src="./assets/about.png" class="side-icon">
-          </router-link>
+          <div class="menu-item-mobile">
+            <router-link to="/">
+              <img src="./assets/home.png" class="side-icon">
+            </router-link>
+          </div>
+          <div class="menu-item-mobile">
+            <router-link to="/all_list">
+              <img src="./assets/all_account.png" class="side-icon">
+            </router-link>
+          </div>
+          <div class="menu-item-mobile">
+            <router-link to="/report">
+              <img src="./assets/report.png" class="side-icon">
+            </router-link>
+          </div>
+          <div class="menu-item-mobile">
+            <router-link to="/about">
+              <img src="./assets/about.png" class="side-icon">
+            </router-link>
+          </div>
         </div>
 
         <router-view class="col col-md-9"/>
@@ -92,7 +96,15 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #696969;
+}
+
+.menu-item{
+  margin: 15px 0px;
+}
+
+.menu-item-mobile{
+  margin-bottom: 30px;
 }
 
 .side-icon{

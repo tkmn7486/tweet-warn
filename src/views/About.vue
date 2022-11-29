@@ -1,5 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h3 class="page-title">ヘルプ</h3>
+    
   </div>
 </template>
+
+<style>
+  .page-title{
+    margin: 10px;
+    border-bottom: solid 2px #4B4B4B;
+  }
+</style>

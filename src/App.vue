@@ -55,8 +55,9 @@
             </router-link>
           </div>
         </div>
-
-        <router-view class="col col-md-9"/>
+        <div class="col col-md-9">
+          <router-view />
+        </div>
       </div>
     </div>
   </div>
@@ -68,7 +69,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #4B4B4B;
 }
 
 .title{
@@ -92,11 +93,12 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #696969;;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #696969;
+  color: #4B4B4B;
 }
 
 .menu-item{
@@ -111,9 +113,22 @@
   width: 10vw;
 }
 
+.side-icon{
+  filter: invert(100%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%);
+}
+
+.router-link-exact-active .side-icon{
+  filter: none;
+}
+
+.router-link-exact-active .mini-icon{
+  filter: none;
+}
+
 .mini-icon{
   width: 30px;
   margin: 5px;
   vertical-align: -15px;
+  filter: invert(100%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%);
 }
 </style>
